@@ -11,74 +11,40 @@ Before using any of the functions below please remember to import the module nam
      
 
 ## Namespaces
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-an
-&lt;/td&gt;&lt;td&gt;
-http://www.zorba-xquery.com/annotations
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-api
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/api
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-html
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/lib/html
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-md
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/lib/markdown
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-req
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/modules/http/request
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-res
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/modules/http/response
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-xqdoc
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/lib/generator
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Variable Summary
+
+| an | http://www.zorba-xquery.com/annotations |
+| ---------- | ---------- |
+| api | http://www.28msec.com/xqdoc/api |
+| ---------- | ---------- |
+| html | http://www.28msec.com/xqdoc/lib/html |
+| ---------- | ---------- |
+| md | http://www.28msec.com/xqdoc/lib/markdown |
+| ---------- | ---------- |
+| req | http://www.28msec.com/modules/http/request |
+| ---------- | ---------- |
+| res | http://www.28msec.com/modules/http/response |
+| ---------- | ---------- |
+| xqdoc | http://www.28msec.com/xqdoc/lib/generator |
+| ---------- | ---------- |
+
+## Variable Summary
 
 * [api:supported-output](#api:supported-output "Title")
 * [api:NO_QUERY_PROVIDED](#api:NO_QUERY_PROVIDED "Title")
 * [api:UNSUPPORTED_OUTPUT](#api:UNSUPPORTED_OUTPUT "Title")
 
 ## Function Summary
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
- 
-&lt;/td&gt;&lt;td&gt;
-`xqdoc ()` Generate module documentation from a specific output format
 
+|   | `xqdoc ()` Generate module documentation from a specific output format
 
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
- 
-&lt;/td&gt;&lt;td&gt;
-`xqdoc ($xquery as xs:string, $output as xs:string)` Generate module documentation from a specific output format
+ |
+| ---------- | ---------- |
+|   | `xqdoc ($xquery as xs:string, $output as xs:string)` Generate module documentation from a specific output format
 
+ |
+| ---------- | ---------- |
 
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Variables
+## Variables
 ### $api:supported-output as xs:string+
  List of supported output format
 

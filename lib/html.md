@@ -19,38 +19,24 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 
     xquery version "3.0" encoding "utf-8";
 ## Namespaces
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-html
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/lib/html
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-o
-&lt;/td&gt;&lt;td&gt;
-http://www.w3.org/2010/xslt-xquery-serialization
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-xq
-&lt;/td&gt;&lt;td&gt;
-http://www.xqdoc.org/1.0
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Variable Summary
+
+| html | http://www.28msec.com/xqdoc/lib/html |
+| ---------- | ---------- |
+| o | http://www.w3.org/2010/xslt-xquery-serialization |
+| ---------- | ---------- |
+| xq | http://www.xqdoc.org/1.0 |
+| ---------- | ---------- |
+
+## Variable Summary
 
 * [html:empty-tags-to-delete](#html:empty-tags-to-delete "Title")
 
 ## Function Summary
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
 
-&lt;/td&gt;&lt;td&gt;
-`convert ($xqdoc as element(xq:xqdoc)) as element(div)`
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Variables
+|  | `convert ($xqdoc as element(xq:xqdoc)) as element(div)` |
+| ---------- | ---------- |
+
+## Variables
 ### $html:empty-tags-to-delete
 
 ## Functions

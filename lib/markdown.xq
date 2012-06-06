@@ -70,21 +70,14 @@ as xs:string
               
       case element(table)
       return
-          "<table>" || $md:nl ||
+          $md:nl ||
           md:convert($node/node()) ||
-          "</table>"
+          $md:nl
 
       case element(tr)
       return
-          "<tr>" || $md:nl ||
-          md:convert($node/node()) || $md:nl ||
-          "</tr>"
-          
-      case element(td)
-      return
-          "<td>" || $md:nl ||
-          md:convert($node/node()) || $md:nl ||
-          "</td>"
+        "| " || string-join(for $td in $node/td return md:convert($td/node()), " | ") || " |" || $md:nl ||
+        "| " || string-join(for $td in $node/td return string-join(for $i in (1 to 10) return "-", ""), " | ") || " |" || $md:nl
           
       case element(code)
       return "`" || string-join($node//text(), " ") || "`"

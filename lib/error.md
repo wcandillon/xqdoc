@@ -4,46 +4,24 @@ Before using any of the functions below please remember to import the module nam
 
     import module namespace err = "http://www.28msec.com/xqdoc/lib/error";
 ## Namespaces
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
-an
-&lt;/td&gt;&lt;td&gt;
-http://www.zorba-xquery.com/annotations
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-cookie
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/modules/http/cookie
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-diagnostic
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/modules/http/util/diagnostic
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-err
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/xqdoc/lib/error
-&lt;/td&gt;
-&lt;/tr&gt;&lt;tr&gt;
-&lt;td&gt;
-resp
-&lt;/td&gt;&lt;td&gt;
-http://www.28msec.com/modules/http/response
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Function Summary
-&lt;table&gt;
-&lt;tr&gt;
-&lt;td&gt;
- 
-&lt;/td&gt;&lt;td&gt;
-`handle ($code as xs:QName, $description as xs:string?, $value as item()*, $stack)`
-&lt;/td&gt;
-&lt;/tr&gt;&lt;/table&gt;## Functions
+
+| an | http://www.zorba-xquery.com/annotations |
+| ---------- | ---------- |
+| cookie | http://www.28msec.com/modules/http/cookie |
+| ---------- | ---------- |
+| diagnostic | http://www.28msec.com/modules/http/util/diagnostic |
+| ---------- | ---------- |
+| err | http://www.28msec.com/xqdoc/lib/error |
+| ---------- | ---------- |
+| resp | http://www.28msec.com/modules/http/response |
+| ---------- | ---------- |
+
+## Function Summary
+
+|   | `handle ($code as xs:QName, $description as xs:string?, $value as item()*, $stack)` |
+| ---------- | ---------- |
+
+## Functions
 ### handle#4
 
     declare %an:sequential function err:handle(
