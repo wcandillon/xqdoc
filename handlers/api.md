@@ -14,6 +14,7 @@ Before using any of the functions below please remember to import the module nam
 
 
 | an | http://www.zorba-xquery.com/annotations |
+| ---- | ---- |
 | api | http://www.28msec.com/xqdoc/api |
 | html | http://www.28msec.com/xqdoc/lib/html |
 | md | http://www.28msec.com/xqdoc/lib/markdown |
@@ -32,6 +33,7 @@ Before using any of the functions below please remember to import the module nam
 |   | `xqdoc ()` Generate module documentation from a specific output format
 
  |
+| ---- | ---- |
 |   | `xqdoc ($xquery as xs:string, $output as xs:string)` Generate module documentation from a specific output format
 
  |

@@ -70,13 +70,14 @@ as xs:string
               
       case element(table)
       return
-          $md:nl ||
-          md:convert($node/node()) ||
-          $md:nl
-
-      case element(tr)
-      return
-        $md:nl || "| " || string-join(for $td in $node/td return md:convert($td/node()), " | ") || " |"
+          ($md:nl,
+          for $tr at $i in $node/tr
+          return string-join(
+                   (
+                     $md:nl || "| " || string-join(for $td in $tr/td return md:convert($td/node()), " | ")  || " |",
+                     if($i = 1) then $md:nl || "| " || string-join(for $td in $tr/td return "----", " | ")  || " |" else () 
+                   ), ""),
+          $md:nl)
           
       case element(code)
       return "`" || string-join($node//text(), " ") || "`"

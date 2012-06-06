@@ -22,6 +22,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 
 
 | html | http://www.28msec.com/xqdoc/lib/html |
+| ---- | ---- |
 | o | http://www.w3.org/2010/xslt-xquery-serialization |
 | xq | http://www.xqdoc.org/1.0 |
 ## Variable Summary
@@ -32,6 +33,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 
 
 |  | `convert ($xqdoc as element(xq:xqdoc)) as element(div)` |
+| ---- | ---- |
 ## Variables
 ### $html:empty-tags-to-delete
 

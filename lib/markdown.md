@@ -19,6 +19,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 
 
 | md | http://www.28msec.com/xqdoc/lib/markdown |
+| ---- | ---- |
 ## Variable Summary
 
 * [md:nl](#md:nl "Title")
@@ -27,6 +28,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 
 
 |  | `convert ($nodes as node()*) as xs:string` |
+| ---- | ---- |
 ## Variables
 ### $md:nl
 
