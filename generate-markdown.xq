@@ -11,5 +11,5 @@ return {
     <http:header name="Content-Type" value="text/plain" />
     <http:body media-type="text">{$xquery}</http:body>
   </http:request>)[2];
-  file:write($target, $md, ());
+  file:write("wiki/" || $target, $md, ());
 }
