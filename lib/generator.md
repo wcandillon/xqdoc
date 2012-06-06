@@ -6,13 +6,9 @@ Before using any of the functions below please remember to import the module nam
 ## Namespaces
 
 | an | http://www.zorba-xquery.com/annotations |
-| ---------- | ---------- |
 | g | http://www.28msec.com/xqdoc/lib/generator |
-| ---------- | ---------- |
 | xq | http://www.xqdoc.org/1.0 |
-| ---------- | ---------- |
 | xqdoc | http://www.zorba-xquery.com/modules/xqdoc |
-| ---------- | ---------- |
 
 ## Variable Summary
 
@@ -21,7 +17,6 @@ Before using any of the functions below please remember to import the module nam
 ## Function Summary
 
 |   | `xqdoc ($xquery as xs:string) as element(xq:xqdoc)` |
-| ---------- | ---------- |
 
 ## Variables
 ### $g:pre-declared-namespaces
