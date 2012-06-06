@@ -20,8 +20,11 @@ William Candillon [wcandillon at gmail dot com](# "Title")
     xquery version "3.0" encoding "utf-8";
 ## Namespaces
 
+
 | html | http://www.28msec.com/xqdoc/lib/html |
+
 | o | http://www.w3.org/2010/xslt-xquery-serialization |
+
 | xq | http://www.xqdoc.org/1.0 |
 
 ## Variable Summary
@@ -29,6 +32,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 * [html:empty-tags-to-delete](#html:empty-tags-to-delete "Title")
 
 ## Function Summary
+
 
 |  | `convert ($xqdoc as element(xq:xqdoc)) as element(div)` |
 

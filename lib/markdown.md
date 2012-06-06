@@ -17,6 +17,7 @@ Before using any of the functions below please remember to import the module nam
 William Candillon [wcandillon at gmail dot com](# "Title")
 ## Namespaces
 
+
 | md | http://www.28msec.com/xqdoc/lib/markdown |
 
 ## Variable Summary
@@ -24,6 +25,7 @@ William Candillon [wcandillon at gmail dot com](# "Title")
 * [md:nl](#md:nl "Title")
 
 ## Function Summary
+
 
 |  | `convert ($nodes as node()*) as xs:string` |
 

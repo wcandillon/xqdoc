@@ -76,7 +76,7 @@ as xs:string
 
       case element(tr)
       return
-        "| " || string-join(for $td in $node/td return md:convert($td/node()), " | ") || " |" || $md:nl
+        $md:nl || "| " || string-join(for $td in $node/td return md:convert($td/node()), " | ") || " |" || $md:nl
           
       case element(code)
       return "`" || string-join($node//text(), " ") || "`"
