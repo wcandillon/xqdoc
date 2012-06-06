@@ -74,7 +74,7 @@ as xs:string
           for $tr at $i in $node/tr
           return string-join(
                    (
-                     $md:nl || "| " || string-join(for $td in $tr/td return md:convert($td/node()), " | ")  || " |",
+                     $md:nl || "| " || string-join(for $td in $tr/td return replace(md:convert($td/node()), $md:nl, ""), " | ")  || " |",
                      if($i = 1) then $md:nl || "| " || string-join(for $td in $tr/td return "----", " | ")  || " |" else () 
                    ), ""),
           $md:nl)

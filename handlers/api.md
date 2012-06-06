@@ -30,13 +30,9 @@ Before using any of the functions below please remember to import the module nam
 ## Function Summary
 
 
-|   | `xqdoc ()` Generate module documentation from a specific output format
-
- |
+|   | `xqdoc ()` Generate module documentation from a specific output format |
 | ---- | ---- |
-|   | `xqdoc ($xquery as xs:string, $output as xs:string)` Generate module documentation from a specific output format
-
- |
+|   | `xqdoc ($xquery as xs:string, $output as xs:string)` Generate module documentation from a specific output format |
 ## Variables
 ### $api:supported-output as xs:string+
  List of supported output format
