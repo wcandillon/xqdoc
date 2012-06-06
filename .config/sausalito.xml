@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sausalito>
+  <!--
+    element project_uri (mandatory)
+    ################################################################################################
+    the project_uri defines a basic namespace in which your project exists. You could compare this to 
+    namespaces in C++ or packages in Java. 
+    
+    The project_uri in Sausalito has to satisfy any URI scheme and, therefore, can be used in a highly 
+    permissive way. Nevertheless, as a best practice a http scheme considering a real website that is 
+    related to your project in any way should be used. For example, http://www.28msec.com/guestbook/ 
+    does not exist, but it is related to 28msec and you can safely assume that it is a worldwide unique 
+    identifier.
+    
+    Within your project this project_uri serves as the base uri for the namespace of your modules,
+    schemas, and collections. For example, if your project_uri is http://www.28msec.com/guestbook/
+    and you want to create a handler module called guestbook (located in the file handler/guestbook.xq),
+    then the (relative) uri of your project (i.e. guestbook) is resolved against the project_rui. This
+    leads to the module's namespace http://www.28msec.com/guestbook/guestbook.
+    
+    other examples:
+    project_uri  + handler module file name = namespace
+    http://www.28msec.com/ + default.xq = http://www.28msec.com/default
+    http://www.28msec.com/guestbook + default.xq = http://www.28msec.com/default
+    http://www.28msec.com/guestbook/ + default.xq = http://www.28msec.com/guestbook/default
+
+    project_uri + library module file name = namespace
+    http://www.28msec.com/ + mylib.xq = http://www.28msec.com/lib/mylib
+    http://www.28msec.com/guestbook/ + mylib.xq = http://www.28msec.com/guestbook/lib/mylib
+    http://www.28msec.com/guestbook + mylib.xq = http://www.28msec.com/lib/mylib  
+    ################################################################################################
+  -->
+  <project_uri>http://www.28msec.com/xqdoc/</project_uri>
+  <!--
+    element version (mandatory)
+    ################################################################################################
+    with the version element you can define an arbitrary version for your project. The element can 
+    contain any non-empty String. The version will be used to identify versions of your project
+    in the 28msec portal.
+    
+    examples:
+    <version>0.1</version>
+    <version>0.1.109.25.b.6</version>
+    <version>0.1 (instable beta)</version>
+    <version>blue fox</version>
+    ################################################################################################
+  -->
+  <version>1.0</version>
+  <!--
+    element start_page (optional | default: /index.html)
+    ################################################################################################
+    the start_page element defines the default target uri of your project. For example, if you start
+    a project with "sausalito test project" with the start page /default/index and you open the page
+    http://localhost:8080 in your browser, you will be forwarded to http://localhost:8080/default/index
+    
+    The start page has to start with a "/".
+    ################################################################################################
+  -->
+  <start_page>/default/index</start_page>
+  <!--
+    element api_version (optional | default: no value)
+    ################################################################################################
+    NOTE: This value is automatically maintained by the Sausalito CoreSDK!
+    the api_version is a hash value that identifies the Sausalito CoreSDK API version with which the
+    project was last run. If this value is different from the hash value shipped with the Sausalito
+    CoreSDK used to start a project, the compiled XQuery modules are deleted from "test/build"
+    project directory and recompiled.
+    ################################################################################################
+  -->
+  <api_version>2jmj7l5rSw0yVb/vlWAYkK/YBwk=</api_version>
+</sausalito>
